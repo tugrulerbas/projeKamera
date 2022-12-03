@@ -55,14 +55,14 @@ namespace KameradanGoruntuAlmak
         int b = 0; //timer2 bloğunda işe yarayacak
         private void button4_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image.Save(string.Format("hırsız{0}.png",a)); //picturebox'un image
+            pictureBox1.Image.Save(string.Format("picture{0}.png",a)); //picturebox'un image
                         //özelliğinin save alt özelliğini kullanarak resmi kaydedebiliyoruz.
             a=a++;  //isimler aynı isimle kaydedilmesin diye tuşa her tıklandığında 1 arttırıyoruz.
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            pictureBox1.Image.Save(string.Format("hırsız{0}.png", a)); //timer1'in tick olayı
+            pictureBox1.Image.Save(string.Format("picture{0}.png", a)); //timer1'in tick olayı
             a = a++;        //her 20 saniyede bir görüntü kaydetmesi kaydetmesi için formun
                             //başlangıç olayındaki invertal'e 20000 atadık
         }
